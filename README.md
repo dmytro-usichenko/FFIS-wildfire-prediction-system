@@ -50,8 +50,10 @@ cp .env.example .env
 # https://ollama.com/download
 ollama pull llama3.2:3b
 
-### 4. Навчити моделі
-python scripts/train_model.py
+### 4. Завантажити датасети і навчити моделі
+а) Завантажити датасети та артефакти за посиланням - https://drive.google.com/drive/folders/1c1wpK8DCbQGXSLv_9BsrAlCwbas1ejKH?usp=sharing
+б) Додати їх в папку data
+в) Навчити моделі - python scripts/train_model.py
 
 ### 5. Запустити застосунок
 streamlit run main.py
