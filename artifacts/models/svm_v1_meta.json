@@ -1,0 +1,7 @@
+{
+  "model_name": "SVM",
+  "version": "v1",
+  "trained_at": "2026-06-09T12:58:45.084106",
+  "train_time_s": 145.58,
+  "n_features": 158
+}

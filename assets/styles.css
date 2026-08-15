@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+    --fire: #ff4d1a;
+    --safe: #10b981;
+    --amber: #f59e0b;
+    --bg: #0d1117;
+    --card: #111820;
+    --border: #1e2d3d;
+    --text: #e8f0f8;
+    --muted: #4a5568;
+    --sec: #8b9cb8;
+}
+
+[data-testid="stAppViewContainer"] {
+    background: var(--bg);
+}
+
+[data-testid="stHeader"] {
+    display: none !important;
+}
+
+[data-testid="stSidebar"] {
+    background: #0d1117 !important;
+    border-right: 1px solid var(--border) !important;
+}
+
+.kpi {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.2rem 1.4rem;
+    transition: .2s;
+}
+
+.kpi:hover {
+    transform: translateY(-2px);
+}
+
+.kpi-icon {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: .4rem;
+}
+
+.kpi-label {
+    font-family: monospace;
+    font-size: .65rem;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--muted);
+}
+
+.kpi-value {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.1;
+}
+
+.kpi-delta {
+    font-size: .72rem;
+    color: var(--sec);
+    margin-top: .3rem;
+}
+
+.risk-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .3rem .9rem;
+    border-radius: 999px;
+    font-family: monospace;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.risk-LOW {
+    background: rgba(16,185,129,.1);
+    color: #34d399;
+    border: 1px solid rgba(16,185,129,.3);
+}
+
+.risk-MEDIUM {
+    background: rgba(245,158,11,.1);
+    color: #fcd34d;
+    border: 1px solid rgba(245,158,11,.3);
+}
+
+.risk-HIGH {
+    background: rgba(239,68,68,.1);
+    color: #f87171;
+    border: 1px solid rgba(239,68,68,.3);
+}
+
+.risk-CRITICAL {
+    background: rgba(255,77,26,.12);
+    color: #ff6b35;
+    border: 1px solid rgba(255,77,26,.4);
+}
+
+.stButton > button {
+    background: linear-gradient(135deg, var(--fire), #ff6b35) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-family: monospace !important;
+    font-size: .78rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: .08em !important;
+    padding: .6rem 1.4rem !important;
+    box-shadow: 0 4px 14px rgba(255,77,26,.25) !important;
+    transition: .2s !important;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(255,77,26,.4) !important;
+}
+
+[data-testid="stPlotlyChart"] {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+}

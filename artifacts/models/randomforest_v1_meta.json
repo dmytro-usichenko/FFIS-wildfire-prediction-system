@@ -1,0 +1,7 @@
+{
+  "model_name": "RandomForest",
+  "version": "v1",
+  "trained_at": "2026-06-09T12:55:04.161303",
+  "train_time_s": 28.03,
+  "n_features": 158
+}

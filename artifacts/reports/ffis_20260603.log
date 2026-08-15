@@ -1,0 +1,269 @@
+2026-06-03 06:36:34 | INFO     | train                        | =======================================================
+2026-06-03 06:36:34 | INFO     | train                        |   FFIS — НАВЧАННЯ МОДЕЛЕЙ
+2026-06-03 06:36:34 | INFO     | train                        | =======================================================
+2026-06-03 06:36:34 | INFO     | train                        | Крок 1: Завантаження даних...
+2026-06-03 06:36:34 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 06:36:35 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 06:36:35 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 06:36:36 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 06:36:36 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 06:36:37 | INFO     | src.data.loader              | Фінальний розмір: (200000, 249)
+2026-06-03 06:36:37 | INFO     | train                        | Крок 2: Вибір ознак...
+2026-06-03 06:36:37 | INFO     | train                        | Ознак для навчання: 158
+2026-06-03 06:36:37 | INFO     | train                        | Крок 3: Розбивка даних...
+2026-06-03 06:38:58 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 06:38:58 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 06:38:58 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 06:38:59 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 06:38:59 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 06:39:00 | INFO     | src.data.loader              | Фінальний розмір: (200000, 249)
+2026-06-03 06:41:20 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 06:41:21 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 06:41:21 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 06:41:21 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 06:41:21 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 06:41:22 | INFO     | src.data.loader              | Фінальний розмір: (200000, 249)
+2026-06-03 06:42:27 | INFO     | train                        | =======================================================
+2026-06-03 06:42:27 | INFO     | train                        |   FFIS — НАВЧАННЯ МОДЕЛЕЙ
+2026-06-03 06:42:27 | INFO     | train                        | =======================================================
+2026-06-03 06:42:27 | INFO     | train                        | Крок 1: Завантаження даних...
+2026-06-03 06:42:27 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 06:42:27 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 06:42:27 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 06:42:27 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 06:42:27 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 06:42:28 | INFO     | src.data.loader              | Після вибірки: (200000, 250) | is_fire: True
+2026-06-03 06:42:28 | INFO     | src.data.loader              | Фінальний розмір: (200000, 250)
+2026-06-03 06:42:28 | INFO     | train                        | Крок 2: Вибір ознак...
+2026-06-03 06:42:28 | INFO     | train                        | Ознак для навчання: 158
+2026-06-03 06:42:28 | INFO     | train                        | Крок 3: Розбивка даних...
+2026-06-03 06:42:29 | INFO     | src.data.splitter            | Розбивка: {'train': (140000, 158), 'val': (20000, 158), 'test': (40000, 158)}
+2026-06-03 06:42:29 | INFO     | train                        | Крок 4: Навчання XGBoost...
+2026-06-03 06:42:29 | INFO     | src.training.trainer         | === Навчання: XGBoost ===
+2026-06-03 06:42:29 | INFO     | src.features.engineering     | Imputer: 163 колонок
+2026-06-03 06:42:30 | INFO     | src.features.engineering     | Winsorizer: 163 колонок
+2026-06-03 06:42:30 | INFO     | src.features.engineering     | Log1p: 5 колонок
+2026-06-03 06:42:30 | INFO     | src.features.engineering     | ColumnSelector: 158 / 163
+2026-06-03 06:42:30 | INFO     | src.training.trainer         | Pipeline: 158 → 158 ознак
+2026-06-03 06:42:30 | INFO     | src.models.base_model        | XGBoost: навчання на 140000 рядках
+2026-06-03 06:42:38 | INFO     | src.training.trainer         | Час навчання: 9.6 сек
+2026-06-03 06:42:38 | INFO     | src.models.base_model        | XGBoost збережено → D:\projects\pycharm\ffis\artifacts\models\xgboost_v1.joblib
+2026-06-03 06:42:38 | INFO     | src.training.trainer         | Артефакти збережено
+2026-06-03 06:42:38 | INFO     | train                        | Крок 5: Оцінка XGBoost...
+2026-06-03 15:45:27 | INFO     | train                        | =======================================================
+2026-06-03 15:45:27 | INFO     | train                        |   FFIS — НАВЧАННЯ МОДЕЛЕЙ
+2026-06-03 15:45:27 | INFO     | train                        | =======================================================
+2026-06-03 15:45:27 | INFO     | train                        | Крок 1: Завантаження даних...
+2026-06-03 15:45:27 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 15:45:28 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 15:45:28 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 15:45:29 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 15:45:29 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 15:45:30 | INFO     | src.data.loader              | Після вибірки: (200000, 250) | is_fire: True
+2026-06-03 15:45:30 | INFO     | src.data.loader              | Фінальний розмір: (200000, 250)
+2026-06-03 15:45:30 | INFO     | train                        | Крок 2: Вибір ознак...
+2026-06-03 15:45:30 | INFO     | train                        | Ознак для навчання: 158
+2026-06-03 15:45:30 | INFO     | train                        | Крок 3: Розбивка даних...
+2026-06-03 15:45:30 | INFO     | src.data.splitter            | Розбивка: {'train': (140000, 158), 'val': (20000, 158), 'test': (40000, 158)}
+2026-06-03 15:45:30 | INFO     | train                        | Крок 4: Навчання XGBoost...
+2026-06-03 15:45:30 | INFO     | src.training.trainer         | === Навчання: XGBoost ===
+2026-06-03 15:45:30 | INFO     | src.features.engineering     | Imputer: 163 колонок
+2026-06-03 15:45:31 | INFO     | src.features.engineering     | Winsorizer: 163 колонок
+2026-06-03 15:45:31 | INFO     | src.features.engineering     | Log1p: 5 колонок
+2026-06-03 15:45:31 | INFO     | src.features.engineering     | ColumnSelector: 158 / 163
+2026-06-03 15:45:31 | INFO     | src.training.trainer         | Pipeline: 158 → 158 ознак
+2026-06-03 15:45:31 | INFO     | src.models.base_model        | XGBoost: навчання на 140000 рядках
+2026-06-03 15:45:41 | INFO     | src.training.trainer         | Час навчання: 10.7 сек
+2026-06-03 15:45:41 | INFO     | src.models.base_model        | XGBoost збережено → D:\projects\pycharm\ffis\artifacts\models\xgboost_v1.joblib
+2026-06-03 15:45:41 | INFO     | src.training.trainer         | Артефакти збережено
+2026-06-03 15:45:41 | INFO     | train                        | Крок 5: Оцінка XGBoost...
+2026-06-03 15:48:00 | INFO     | train                        | =======================================================
+2026-06-03 15:48:00 | INFO     | train                        |   FFIS — НАВЧАННЯ МОДЕЛЕЙ
+2026-06-03 15:48:00 | INFO     | train                        | =======================================================
+2026-06-03 15:48:00 | INFO     | train                        | Крок 1: Завантаження даних...
+2026-06-03 15:48:00 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 15:48:00 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 15:48:00 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 15:48:01 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 15:48:01 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 15:48:02 | INFO     | src.data.loader              | Після вибірки: (200000, 250) | is_fire: True
+2026-06-03 15:48:02 | INFO     | src.data.loader              | Фінальний розмір: (200000, 250)
+2026-06-03 15:48:02 | INFO     | train                        | Крок 2: Вибір ознак...
+2026-06-03 15:48:02 | INFO     | train                        | Ознак для навчання: 158
+2026-06-03 15:48:02 | INFO     | train                        | Крок 3: Розбивка даних...
+2026-06-03 15:48:02 | INFO     | src.data.splitter            | Розбивка: {'train': (140000, 158), 'val': (20000, 158), 'test': (40000, 158)}
+2026-06-03 15:48:02 | INFO     | train                        | Крок 4: Навчання XGBoost...
+2026-06-03 15:48:02 | INFO     | src.training.trainer         | === Навчання: XGBoost ===
+2026-06-03 15:48:02 | INFO     | src.features.engineering     | Imputer: 163 колонок
+2026-06-03 15:48:03 | INFO     | src.features.engineering     | Winsorizer: 163 колонок
+2026-06-03 15:48:03 | INFO     | src.features.engineering     | Log1p: 5 колонок
+2026-06-03 15:48:03 | INFO     | src.features.engineering     | ColumnSelector: 158 / 163
+2026-06-03 15:48:03 | INFO     | src.training.trainer         | Pipeline: 158 → 158 ознак
+2026-06-03 15:48:03 | INFO     | src.models.base_model        | XGBoost: навчання на 140000 рядках
+2026-06-03 15:48:12 | INFO     | src.training.trainer         | Час навчання: 9.6 сек
+2026-06-03 15:48:12 | INFO     | src.models.base_model        | XGBoost збережено → D:\projects\pycharm\ffis\artifacts\models\xgboost_v1.joblib
+2026-06-03 15:48:12 | INFO     | src.training.trainer         | Артефакти збережено
+2026-06-03 15:48:12 | INFO     | train                        | Крок 5: Оцінка XGBoost...
+2026-06-03 22:53:30 | INFO     | train                        | =======================================================
+2026-06-03 22:53:30 | INFO     | train                        |   FFIS — НАВЧАННЯ МОДЕЛЕЙ
+2026-06-03 22:53:30 | INFO     | train                        | =======================================================
+2026-06-03 22:53:30 | INFO     | train                        | Крок 1: Завантаження даних...
+2026-06-03 22:53:30 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 22:53:31 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 22:53:31 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 22:53:32 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 22:53:32 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 22:53:33 | INFO     | src.data.loader              | Після вибірки: (200000, 250) | is_fire: True
+2026-06-03 22:53:33 | INFO     | src.data.loader              | Фінальний розмір: (200000, 250)
+2026-06-03 22:53:33 | INFO     | train                        | Крок 2: Вибір ознак...
+2026-06-03 22:53:33 | INFO     | train                        | Ознак для навчання: 158
+2026-06-03 22:53:33 | INFO     | train                        | Крок 3: Розбивка даних...
+2026-06-03 22:53:33 | INFO     | src.data.splitter            | Розбивка: {'train': (140000, 158), 'val': (20000, 158), 'test': (40000, 158)}
+2026-06-03 22:53:33 | INFO     | train                        | Крок 4: Навчання XGBoost...
+2026-06-03 22:53:33 | INFO     | src.training.trainer         | === Навчання: XGBoost ===
+2026-06-03 22:53:34 | INFO     | src.features.engineering     | Imputer: 163 колонок
+2026-06-03 22:53:34 | INFO     | src.features.engineering     | Winsorizer: 163 колонок
+2026-06-03 22:53:34 | INFO     | src.features.engineering     | Log1p: 5 колонок
+2026-06-03 22:53:34 | INFO     | src.features.engineering     | ColumnSelector: 158 / 163
+2026-06-03 22:53:34 | INFO     | src.training.trainer         | Pipeline: 158 → 158 ознак
+2026-06-03 22:53:34 | INFO     | src.models.base_model        | XGBoost: навчання на 140000 рядках
+2026-06-03 22:53:44 | INFO     | src.training.trainer         | Час навчання: 10.5 сек
+2026-06-03 22:53:44 | INFO     | src.models.base_model        | XGBoost збережено → D:\projects\pycharm\ffis\artifacts\models\xgboost_v1.joblib
+2026-06-03 22:53:44 | INFO     | src.training.trainer         | Артефакти збережено
+2026-06-03 22:53:44 | INFO     | train                        | Крок 5: Оцінка XGBoost...
+2026-06-03 22:55:37 | INFO     | train                        | =======================================================
+2026-06-03 22:55:37 | INFO     | train                        |   FFIS — НАВЧАННЯ МОДЕЛЕЙ
+2026-06-03 22:55:37 | INFO     | train                        | =======================================================
+2026-06-03 22:55:37 | INFO     | train                        | Крок 1: Завантаження даних...
+2026-06-03 22:55:37 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 22:55:38 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 22:55:38 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 22:55:38 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 22:55:38 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 22:55:39 | INFO     | src.data.loader              | Після вибірки: (200000, 250) | is_fire: True
+2026-06-03 22:55:39 | INFO     | src.data.loader              | Фінальний розмір: (200000, 250)
+2026-06-03 22:55:39 | INFO     | train                        | Крок 2: Вибір ознак...
+2026-06-03 22:55:39 | INFO     | train                        | Ознак для навчання: 158
+2026-06-03 22:55:39 | INFO     | train                        | Крок 3: Розбивка даних...
+2026-06-03 22:55:40 | INFO     | src.data.splitter            | Розбивка: {'train': (140000, 158), 'val': (20000, 158), 'test': (40000, 158)}
+2026-06-03 22:55:40 | INFO     | train                        | Крок 4: Навчання XGBoost...
+2026-06-03 22:55:40 | INFO     | src.training.trainer         | === Навчання: XGBoost ===
+2026-06-03 22:55:40 | INFO     | src.features.engineering     | Imputer: 163 колонок
+2026-06-03 22:55:41 | INFO     | src.features.engineering     | Winsorizer: 163 колонок
+2026-06-03 22:55:41 | INFO     | src.features.engineering     | Log1p: 5 колонок
+2026-06-03 22:55:41 | INFO     | src.features.engineering     | ColumnSelector: 158 / 163
+2026-06-03 22:55:41 | INFO     | src.training.trainer         | Pipeline: 158 → 158 ознак
+2026-06-03 22:55:41 | INFO     | src.models.base_model        | XGBoost: навчання на 140000 рядках
+2026-06-03 22:55:50 | INFO     | src.training.trainer         | Час навчання: 9.8 сек
+2026-06-03 22:55:50 | INFO     | train                        | Крок 5: Оцінка XGBoost...
+2026-06-03 22:56:50 | INFO     | train                        | =======================================================
+2026-06-03 22:56:50 | INFO     | train                        |   FFIS — НАВЧАННЯ МОДЕЛЕЙ
+2026-06-03 22:56:50 | INFO     | train                        | =======================================================
+2026-06-03 22:56:50 | INFO     | train                        | Крок 1: Завантаження даних...
+2026-06-03 22:56:50 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 22:56:50 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 22:56:50 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 22:56:51 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 22:56:51 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 22:56:51 | INFO     | src.data.loader              | Після вибірки: (200000, 250) | is_fire: True
+2026-06-03 22:56:52 | INFO     | src.data.loader              | Фінальний розмір: (200000, 250)
+2026-06-03 22:56:52 | INFO     | train                        | Крок 2: Вибір ознак...
+2026-06-03 22:56:52 | INFO     | train                        | Ознак для навчання: 158
+2026-06-03 22:56:52 | INFO     | train                        | Крок 3: Розбивка даних...
+2026-06-03 22:56:52 | INFO     | src.data.splitter            | Розбивка: {'train': (140000, 158), 'val': (20000, 158), 'test': (40000, 158)}
+2026-06-03 22:56:52 | INFO     | train                        | Крок 4: Навчання XGBoost...
+2026-06-03 22:56:52 | INFO     | src.training.trainer         | === Навчання: XGBoost ===
+2026-06-03 22:56:52 | INFO     | src.features.engineering     | Imputer: 163 колонок
+2026-06-03 22:56:53 | INFO     | src.features.engineering     | Winsorizer: 163 колонок
+2026-06-03 22:56:53 | INFO     | src.features.engineering     | Log1p: 5 колонок
+2026-06-03 22:56:53 | INFO     | src.features.engineering     | ColumnSelector: 158 / 163
+2026-06-03 22:56:53 | INFO     | src.training.trainer         | Pipeline: 158 → 158 ознак
+2026-06-03 22:56:53 | INFO     | src.models.base_model        | XGBoost: навчання на 140000 рядках
+2026-06-03 22:57:02 | INFO     | src.training.trainer         | Час навчання: 10.4 сек
+2026-06-03 22:57:02 | INFO     | train                        | Крок 5: Оцінка XGBoost...
+2026-06-03 22:58:11 | INFO     | train                        | =======================================================
+2026-06-03 22:58:11 | INFO     | train                        |   FFIS — НАВЧАННЯ МОДЕЛЕЙ
+2026-06-03 22:58:11 | INFO     | train                        | =======================================================
+2026-06-03 22:58:11 | INFO     | train                        | Крок 1: Завантаження даних...
+2026-06-03 22:58:11 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 22:58:11 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 22:58:11 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 22:58:12 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 22:58:12 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 22:58:12 | INFO     | src.data.loader              | Після вибірки: (200000, 250) | is_fire: True
+2026-06-03 22:58:13 | INFO     | src.data.loader              | Фінальний розмір: (200000, 250)
+2026-06-03 22:58:13 | INFO     | train                        | Крок 2: Вибір ознак...
+2026-06-03 22:58:13 | INFO     | train                        | Ознак для навчання: 158
+2026-06-03 22:58:13 | INFO     | train                        | Крок 3: Розбивка даних...
+2026-06-03 22:58:13 | INFO     | src.data.splitter            | Розбивка: {'train': (140000, 158), 'val': (20000, 158), 'test': (40000, 158)}
+2026-06-03 22:58:13 | INFO     | train                        | Крок 4: Навчання XGBoost...
+2026-06-03 22:58:13 | INFO     | src.training.trainer         | === Навчання: XGBoost ===
+2026-06-03 22:58:13 | INFO     | src.features.engineering     | Imputer: 163 колонок
+2026-06-03 22:58:14 | INFO     | src.features.engineering     | Winsorizer: 163 колонок
+2026-06-03 22:58:14 | INFO     | src.features.engineering     | Log1p: 5 колонок
+2026-06-03 22:58:14 | INFO     | src.features.engineering     | ColumnSelector: 158 / 163
+2026-06-03 22:58:14 | INFO     | src.training.trainer         | Ознак після pipeline: 158
+2026-06-03 22:58:14 | INFO     | src.models.base_model        | XGBoost: навчання на 140000 рядках
+2026-06-03 22:58:23 | INFO     | src.training.trainer         | Час навчання: 9.8 сек
+2026-06-03 22:58:23 | INFO     | train                        | Крок 5: Оцінка XGBoost...
+2026-06-03 22:58:23 | INFO     | src.evaluation.evaluator     | Оцінка: XGBoost
+2026-06-03 22:58:23 | INFO     | src.evaluation.evaluator     | AUC=0.9905  F1=0.9526  Acc=0.9517
+2026-06-03 22:58:23 | INFO     | src.models.base_model        | XGBoost збережено → D:\projects\pycharm\ffis\artifacts\models\xgboost_v1.joblib
+2026-06-03 22:58:23 | INFO     | src.training.trainer         | Артефакти збережено
+2026-06-03 22:58:23 | INFO     | train                        | Крок 4: Навчання RandomForest...
+2026-06-03 22:58:23 | INFO     | src.training.trainer         | === Навчання: RandomForest ===
+2026-06-03 22:58:23 | INFO     | src.features.engineering     | Imputer: 163 колонок
+2026-06-03 22:58:24 | INFO     | src.features.engineering     | Winsorizer: 163 колонок
+2026-06-03 22:58:24 | INFO     | src.features.engineering     | Log1p: 5 колонок
+2026-06-03 22:58:24 | INFO     | src.features.engineering     | ColumnSelector: 158 / 163
+2026-06-03 22:58:24 | INFO     | src.training.trainer         | Ознак після pipeline: 158
+2026-06-03 22:58:24 | INFO     | src.models.base_model        | RandomForest: навчання на 140000 рядках
+2026-06-03 22:58:51 | INFO     | src.training.trainer         | Час навчання: 28.1 сек
+2026-06-03 22:58:51 | INFO     | train                        | Крок 5: Оцінка RandomForest...
+2026-06-03 22:58:52 | INFO     | src.evaluation.evaluator     | Оцінка: RandomForest
+2026-06-03 22:58:52 | INFO     | src.evaluation.evaluator     | AUC=0.9767  F1=0.9187  Acc=0.9155
+2026-06-03 22:58:52 | INFO     | src.models.base_model        | RandomForest збережено → D:\projects\pycharm\ffis\artifacts\models\randomforest_v1.joblib
+2026-06-03 22:58:52 | INFO     | src.training.trainer         | Артефакти збережено
+2026-06-03 22:58:52 | INFO     | train                        | Крок 4: Навчання LogisticRegression...
+2026-06-03 22:58:52 | INFO     | src.training.trainer         | === Навчання: LogisticRegression ===
+2026-06-03 22:58:52 | INFO     | src.features.engineering     | Imputer: 163 колонок
+2026-06-03 22:58:53 | INFO     | src.features.engineering     | Winsorizer: 163 колонок
+2026-06-03 22:58:53 | INFO     | src.features.engineering     | Log1p: 5 колонок
+2026-06-03 22:58:53 | INFO     | src.features.engineering     | ColumnSelector: 158 / 163
+2026-06-03 22:58:54 | INFO     | src.features.engineering     | Scaler: 158 колонок
+2026-06-03 22:58:54 | INFO     | src.training.trainer         | Ознак після pipeline: 158
+2026-06-03 22:58:54 | INFO     | src.models.base_model        | LogisticRegression: навчання на 140000 рядках
+2026-06-03 22:58:58 | INFO     | src.training.trainer         | Час навчання: 5.9 сек
+2026-06-03 22:58:58 | INFO     | train                        | Крок 5: Оцінка LogisticRegression...
+2026-06-03 22:58:58 | INFO     | src.evaluation.evaluator     | Оцінка: LogisticRegression
+2026-06-03 22:58:59 | INFO     | src.evaluation.evaluator     | AUC=0.8975  F1=0.8287  Acc=0.8204
+2026-06-03 22:58:59 | INFO     | src.models.base_model        | LogisticRegression збережено → D:\projects\pycharm\ffis\artifacts\models\logisticregression_v1.joblib
+2026-06-03 22:58:59 | INFO     | src.training.trainer         | Артефакти збережено
+2026-06-03 22:58:59 | INFO     | train                        | Результати збережено: D:\projects\pycharm\ffis\artifacts\reports\model_comparison.json
+2026-06-03 22:58:59 | INFO     | train                        | =======================================================
+2026-06-03 22:58:59 | INFO     | train                        |   ПІДСУМОК
+2026-06-03 22:58:59 | INFO     | train                        | =======================================================
+2026-06-03 22:58:59 | INFO     | train                        | XGBoost                    AUC=0.9905  F1=0.9526
+2026-06-03 22:58:59 | INFO     | train                        | RandomForest               AUC=0.9767  F1=0.9187
+2026-06-03 22:58:59 | INFO     | train                        | LogisticRegression         AUC=0.8975  F1=0.8287
+2026-06-03 23:00:08 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 23:00:09 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 23:00:09 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 23:00:09 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 23:00:09 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 23:00:10 | INFO     | src.data.loader              | Після вибірки: (200000, 250) | is_fire: True
+2026-06-03 23:00:11 | INFO     | src.data.loader              | Фінальний розмір: (200000, 250)
+2026-06-03 23:07:24 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 23:07:25 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 23:07:25 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 23:07:25 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 23:07:25 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 23:07:27 | INFO     | src.data.loader              | Після вибірки: (200000, 250) | is_fire: True
+2026-06-03 23:07:27 | INFO     | src.data.loader              | Фінальний розмір: (200000, 250)
+2026-06-03 23:25:38 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-03 23:25:39 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-03 23:25:39 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-03 23:25:40 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-03 23:25:40 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-03 23:25:41 | INFO     | src.data.loader              | Після вибірки: (200000, 250) | is_fire: True
+2026-06-03 23:25:41 | INFO     | src.data.loader              | Фінальний розмір: (200000, 250)

@@ -1,0 +1,7 @@
+{
+  "model_name": "XGBoost",
+  "version": "v1",
+  "trained_at": "2026-06-09T12:54:29.942231",
+  "train_time_s": 11.16,
+  "n_features": 158
+}

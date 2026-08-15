@@ -1,0 +1,25 @@
+# Секрети
+.env
+
+# Великі файли даних
+data/Date_final_dataset_balanced_float32.parquet
+data/*.parquet
+
+# Навчені моделі (великі бінарні файли)
+artifacts/models/*.joblib
+
+# Python кеш
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,7 @@
+{
+  "model_name": "LogisticRegression",
+  "version": "v1",
+  "trained_at": "2026-06-09T12:55:09.385946",
+  "train_time_s": 4.83,
+  "n_features": 158
+}

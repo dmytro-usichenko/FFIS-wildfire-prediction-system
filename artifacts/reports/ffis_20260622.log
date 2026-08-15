@@ -1,0 +1,7 @@
+2026-06-22 12:46:43 | INFO     | src.data.loader              | Завантажую: D:\projects\pycharm\ffis\data\Date_final_dataset_balanced_float32.parquet
+2026-06-22 12:46:45 | INFO     | src.data.loader              | Завантажено: (934586, 278) | 1043.0 MB
+2026-06-22 12:46:45 | INFO     | src.data.loader              | Валідація: OK (278 колонок)
+2026-06-22 12:46:46 | INFO     | src.data.loader              | Баланс: {1: 467293, 0: 467293}
+2026-06-22 12:46:46 | INFO     | src.data.loader              | Вибірка 200000 рядків
+2026-06-22 12:46:47 | INFO     | src.data.loader              | Після вибірки: (200000, 250) | is_fire: True
+2026-06-22 12:46:47 | INFO     | src.data.loader              | Фінальний розмір: (200000, 250)
